@@ -1,0 +1,14 @@
+@font-face {
+    font-family: compacta;
+    src: url("../assets/fonts/Compacta.otf");
+}
+
+@font-face {
+    font-family: MSPT;
+    src: url("../assets/fonts/ManuScriptProtoType.ttf");
+}
+
+@font-face {
+    font-family: CB;
+    src: url("../assets/fonts/CircularBlack.ttf");
+}

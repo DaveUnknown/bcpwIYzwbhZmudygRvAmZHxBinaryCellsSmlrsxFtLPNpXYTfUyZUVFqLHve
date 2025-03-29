@@ -1,0 +1,79 @@
+/* RESET */
+:root {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+    /* 2. Remove default margin */
+    margin: 0;
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    /* 6. Inherit fonts for form controls */
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+
+p {
+    /* 8. Improve line wrapping */
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+/* =============================== */

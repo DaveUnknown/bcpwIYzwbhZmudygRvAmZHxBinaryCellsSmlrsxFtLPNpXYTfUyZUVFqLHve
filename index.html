@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeRunner</title>
+    <link rel="stylesheet" href="./css/RESET.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/elements/EnterButton.css">
+    <link rel="stylesheet" href="./css/elements/Visualizer.css">
+</head>
+<body>
+    <div class="echo-container">
+        <div id="blue-sphere" class="blue-sphere"></div>
+        <div id="black-sphere" class="black-sphere pre"></div>
+        <svg>
+            <filter id="orbs">
+                <feTurbulence type="turbulence" baseFrequency="0.085 0.085" numOctaves="1" seed="25">
+                    <animate attributeName="baseFrequency" dur="60s" values="0.005; 0.5; 0.005;" keyTimes="0; 0.5; 1" calcMode="linear" repeatCount="indefinite"/>
+                </feTurbulence>
+                <feDropShadow stdDeviation="5 5" in="turbulence" dx="10" dy="10" flood-color="#000000" result="dropShadow"/>
+            </filter>
+        </svg>
+        <div class="ButtonContainer" onclick="enter(this)">
+            <div class="EnterButton">
+                <h1>E<span>N</span>TER</h1>
+            </div>
+            <svg>
+                <filter id="wavy">
+                    <feTurbulence type="turbulence" baseFrequency="0.04" numOctaves="12" seed="9">
+                        <animate attributeName="baseFrequency" dur="60s" values="0.005; 0.015; 0.005;" keyTimes="0; 0.5; 1" calcMode="linear" repeatCount="indefinite"/>
+                    </feTurbulence>
+                    
+                    <feDisplacementMap in="SourceGraphic" scale="30"/>
+                </filter>
+            </svg>
+        </div>
+    </div>
+
+    <div class="starfield">
+        <div class="centeredTitle">
+            <h2>INITIATION</h2>
+        </div>
+        <div class="hero-container">
+            <div class="environment"></div>
+            <h2 class="hero glitch layers" data-text="COMING SOON"><span>COMING SOON</span></h2>
+        </div>
+
+        <div class="footer-text">
+            <h5 class="progress"></h5>
+            <h5 class="progress-date"></h5>
+        </div>
+
+        <div class="visualizer">
+            <div class="bars-container">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="music">
+              <!-- <h5>Now Playing...</h5> -->
+              <span class="track-name"></span>
+            </div>
+        </div>
+          
+    </div>
+        
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/globals.js"></script>
+    <script type="module" src="./js/Elements/EnterButton.js"></script>
+    <script type="module" src="./js/Elements/Visualizer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+</body>
+</html>
