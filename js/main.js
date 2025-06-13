@@ -143,7 +143,7 @@ function initiation() {
         sfx.typewritterTyping.play();
         typeWrite(progress, "This page is a work in progress.", 200, () => 
             {   
-                typeWrite(progressDate, "ESTIMATED COMPLETION: 01/08/2025", 200);
+                typeWrite(progressDate, "ESTIMATED COMPLETION: 01/09/2025", 200);
                 sfx.typewritterTyping.play();
             }, 300);
     }, 8000);
